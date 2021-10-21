@@ -1,0 +1,47 @@
+p=0
+S=str(input('dati sirul= '))
+print(S)
+b=''
+c=''
+d=''
+e=''
+f=''
+g=''
+for i in S:
+    if i=='A':
+        p+=1
+print('punctul a=',p)
+
+for i in S:
+    if i=='A':
+        b+='*'
+    if i!='A':
+        b+=i
+print('punctul b=',b)
+
+for i in S:
+    if i!='B':
+        c+=i
+print('punctul c = ',c)
+MA=0
+for i in range(0,len(S)):
+    if (S[i]=='M')and(S[i+1]=='A'):
+        MA+=1
+print('punctul d=',MA)
+
+x=S
+for i in range(0,len(x)):
+    if (S[i]=='M')and(S[i+1]=='A'):
+        e+='TA'
+    else:
+        e+=S[i]
+print('punctul e= ',e)
+
+y=S
+for i in range(0,len(y)):
+    if (S[i]=='T')and(S[i+1]=='O'):
+        f+=S[i] 
+        f+=S[i+1]
+
+print('punctul f=',f)
+print('punctul g=',S[::-1])
