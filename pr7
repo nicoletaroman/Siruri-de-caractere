@@ -10,7 +10,7 @@
 p=0
 S=str(input('dati sirul= '))
 print(S)
-b=''
+
 c=''
 d=''
 e=''
@@ -21,12 +21,9 @@ for i in S:
         p+=1
 print('punctul a=',p)
 
-for i in S:
-    if i=='A':
-        b+='*'
-    if i!='A':
-        b+=i
+b=S.replace('A','*')
 print('punctul b=',b)
+
 
 for i in S:
     if i!='B':
@@ -46,11 +43,8 @@ for i in range(0,len(x)):
         e+=S[i]
 print('punctul e= ',e)
 
-y=S
-for i in range(0,len(y)):
-    if (S[i]=='T')and(S[i+1]=='O'):
-        f+=S[i] 
-        f+=S[i+1]
+y=S.replace('TO','')
 
-print('punctul f=',f)
+
+print('punctul f=',y)
 print('punctul g=',S[::-1])
