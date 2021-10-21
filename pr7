@@ -1,3 +1,12 @@
+#REZOLVĂ!Elaboraţi un program care citeşte de la tastatură şirul de caractere S şi afişează pe ecran:
+#b) şirul obţinut prin substituirea caracterului ’A’ prin caracterul ’*’;
+#c) şirul obţinut prin radierea din şirul S a tuturor apariţiilor caracterului’B’;
+#d) numărul de apariţii ale silabei MA în şirul S;
+#e) şirul obţinut prin substituirea tuturor apariţiilor în şirul S a silabei MA prin
+#silaba TA;
+#f) şirul obţinut prin radierea din şirul S a tuturor apariţiilor silabei TO;
+#g) scrierea inversă a şirului S;
+
 p=0
 S=str(input('dati sirul= '))
 print(S)
